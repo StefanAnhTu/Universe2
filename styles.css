@@ -1,0 +1,96 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 960px;
+    margin:0px auto;
+
+}
+
+#header{
+    background-color: black;
+    position: fixed ;    
+    height: 80px;
+    border-bottom:1px solid black;
+    padding: 20px 0px;
+    background-color: black;
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between ;
+    justify-items: center;
+}
+
+#logo{
+    padding: 5px 0px;
+}
+
+#logo img{
+    max-width: 250px;
+    margin-left: -250px;
+}
+
+#menu{
+    display: flex;
+    list-style: none;
+}
+
+#menu li a{
+    color: white;
+    display: block;
+    padding: 18px 20px;
+    text-decoration: none;
+
+}
+#menu li{
+    position: relative;
+}
+
+#menu ul.sub-menu{
+    position: absolute;
+    background-color: rgb(25, 28, 28);
+    padding: 0px 0px;
+    list-style: none;
+    width: 200px;
+    border-bottom: 1px solid white;
+    display: none;
+}
+#menu li:hover ul.sub-menu{
+    display: block;
+}
+#menu ul.sub-menu a{
+    padding: 8px 15px;
+    border-bottom: 1px solid white;
+}
+#menu ul.sub-menu li:hover a{
+    border-bottom: 1px solid rgb(112, 50, 228) ;
+}
+
+#menu ul.sub-menu li:last-child a{
+    border: none;
+}
+#menu>li>a{
+    position: relative;
+}
+#menu>li>a::before{
+    content: "";
+    height: 4px;
+    width: 0px;
+    background: rgb(131, 45, 251);
+    position: absolute;
+    bottom: 0px;
+    display: none;
+    left: 0px;
+}
+#menu>li:hover>a::before{
+    display: block;
+    width: 100%;
+    
+}
+#tintuc{
+    display: flex;
+    flex-direction: column;
+}
